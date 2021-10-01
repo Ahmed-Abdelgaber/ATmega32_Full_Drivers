@@ -1,0 +1,11 @@
+MCAL/MDIO/MDIO.o MCAL/MDIO/MDIO.o: ../MCAL/MDIO/MDIO.c \
+  ../MCAL/MDIO/MDIO.h E:\AVR\First\LIB/LSTD_TYPES.h \
+  ../MCAL/MDIO/MDIO_private.h E:\AVR\First\LIB/LBIT_MATH.h
+
+../MCAL/MDIO/MDIO.h:
+
+E:\AVR\First\LIB/LSTD_TYPES.h:
+
+../MCAL/MDIO/MDIO_private.h:
+
+E:\AVR\First\LIB/LBIT_MATH.h:

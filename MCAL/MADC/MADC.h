@@ -1,13 +1,12 @@
-﻿/*
-* MADC.h
-*
-* Created: 19/09/2021 10:57:51 ص
-*  Author: Ahmed Gaber
-*/
+/*
+ * MADC.h
+ *
+ *  Created on: ٢٩‏/٠٩‏/٢٠٢١
+ *      Author: Ahmed Gaber
+ */
 
-
-#ifndef MADC_H_
-#define MADC_H_
+#ifndef MADC_MADC_H_
+#define MADC_MADC_H_
 
 #include "LSTD_TYPES.h"
 
@@ -20,7 +19,7 @@ typedef enum
 	preScaler_32,
 	preScaler_64,
 	preScaler_128
-	
+
 }ADC_preScaler;
 
 typedef enum
@@ -47,4 +46,4 @@ u16 MADC_U16_readDigitalValue(ADC_channel channel);
 
 
 
-#endif /* MADC_H_ */
+#endif /* MADC_MADC_H_ */

@@ -1,0 +1,64 @@
+#include "LSTD_TYPES.h"
+#include "MDIO.h"
+#include <util/delay.h>
+
+int main(void)
+{
+	currentPort test;
+	test.Pin.Pin0 = HIGH;
+	test.Pin.Pin1 = LOW;
+	test.Pin.Pin2 = HIGH;
+	test.Pin.Pin3 = NOTUSED;
+	test.Pin.Pin4 = NOTUSED;
+	test.Pin.Pin5 = HIGH;
+	test.Pin.Pin6 = LOW;
+	test.Pin.Pin7 = HIGH;
+
+	currentPort revtest;
+	revtest.Pin.Pin0 = LOW;
+	revtest.Pin.Pin1 = HIGH;
+	revtest.Pin.Pin2 = LOW;
+	revtest.Pin.Pin3 = NOTUSED;
+	revtest.Pin.Pin4 = NOTUSED;
+	revtest.Pin.Pin5 = LOW;
+	revtest.Pin.Pin6 = HIGH;
+	revtest.Pin.Pin7 = LOW;
+
+	currentPort buff1;
+	buff1.Pin.Pin0 = NOTUSED;
+	buff1.Pin.Pin1 = NOTUSED;
+	buff1.Pin.Pin2 = NOTUSED;
+	buff1.Pin.Pin3 = HIGH;
+	buff1.Pin.Pin4 = HIGH;
+	buff1.Pin.Pin5 = NOTUSED;
+	buff1.Pin.Pin6 = NOTUSED;
+	buff1.Pin.Pin7 = NOTUSED;
+
+	currentPort buff2;
+	buff2.Pin.Pin0 = NOTUSED;
+	buff2.Pin.Pin1 = NOTUSED;
+	buff2.Pin.Pin2 = NOTUSED;
+	buff2.Pin.Pin3 = LOW;
+	buff2.Pin.Pin4 = LOW;
+	buff2.Pin.Pin5 = NOTUSED;
+	buff2.Pin.Pin6 = NOTUSED;
+	buff2.Pin.Pin7 = NOTUSED;
+
+	MDIO_Void_setPortDirection(PORT_A, OUTPUT);
+	MDIO_Void_setPortValue(PORT_A, 0x00);
+
+	while(1)
+	{
+		MDIO_Void_setSpecifcBitsValue(PORT_A, &test);
+		_delay_ms(150);
+		MDIO_Void_setSpecifcBitsValue(PORT_A, &revtest);
+		_delay_ms(150);
+		MDIO_Void_setSpecifcBitsValue(PORT_A, &buff1);
+		_delay_ms(150);
+		MDIO_Void_setSpecifcBitsValue(PORT_A, &buff2);
+		_delay_ms(150);
+
+	}
+
+	return 0;
+}

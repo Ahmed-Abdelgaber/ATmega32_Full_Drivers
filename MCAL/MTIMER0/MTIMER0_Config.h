@@ -1,13 +1,14 @@
 /*
- * MTIMER0_Config.h
+ * TIMER0_Config.h
  *
- *  Created on: ??�/??�/????
+ *  Created on: ٣٠‏/٠٩‏/٢٠٢١
  *      Author: Ahmed Gaber
  */
 
 #ifndef MTIMER0_MTIMER0_CONFIG_H_
 #define MTIMER0_MTIMER0_CONFIG_H_
-#include "MTIMER_Private.h"
+
+
 /*
  * 1- NO_PRESCALER
  * 2- PRESCALER_8
@@ -28,5 +29,6 @@
 #define TIMER0_CTC_VALUE 10
 
 #define TIMER_PRELOAD_VALUE 0
+
 
 #endif /* MTIMER0_MTIMER0_CONFIG_H_ */

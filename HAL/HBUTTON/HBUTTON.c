@@ -1,12 +1,11 @@
 /*
  * HBUTTON.c
  *
- *  Created on: ??�/??�/????
+ *  Created on: ٢٩‏/٠٩‏/٢٠٢١
  *      Author: Ahmed Gaber
  */
 
-#ifndef HBUTTON_HBUTTON_C_
-#define HBUTTON_HBUTTON_C_
+
 #include "MDIO.h"
 #include "LSTD_TYPES.h"
 #include "LBIT_MATH.h"
@@ -22,9 +21,9 @@ void HBUTTON_Void_puttonInit()
 	MDIO_Void_setPinValue(BUTTON2_PORT,BUTTON2_PIN,HIGH);
 }
 
-value HBUTTON_Value_getButtonValue(u8 buttonPort, u8 buttonPin)
+bool HBUTTON_Value_getButtonValue(u8 buttonPort, u8 buttonPin)
 {
-	value buttonValue ;
+	bool buttonValue ;
 	if((GET_BIT(buttonPort,buttonPin)) == HIGH)
 	{
 		buttonValue = HIGH;
@@ -35,5 +34,3 @@ value HBUTTON_Value_getButtonValue(u8 buttonPort, u8 buttonPin)
 	}
 	return buttonValue;
 }
-
-#endif /* HBUTTON_HBUTTON_C_ */

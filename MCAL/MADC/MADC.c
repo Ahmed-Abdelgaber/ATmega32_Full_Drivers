@@ -1,9 +1,10 @@
-﻿/*
-* MADC.c
-*
-* Created: 19/09/2021 10:58:08 ص
-*  Author: Ahmed Gaber
-*/
+/*
+ * MADC.c
+ *
+ *  Created on: ٢٩‏/٠٩‏/٢٠٢١
+ *      Author: Ahmed Gaber
+ */
+
 #include "MADC.h"
 #include "MADC_Private.h"
 #include "LBIT_MATH.h"
@@ -27,14 +28,15 @@ u16 MADC_U16_readDigitalValue(ADC_channel channel)
 	//Step 1: Choose Channel
 	ADMUX &= CHANNEL_MASK;
 	ADMUX |= channel;
-	
+
 	//Step 2: Start Conversion
 	SET_BIT(ADCSRA,ADSC);
-	
+
 	//Step 3: Check & Wait Till conversion ends
 	while(GET_BIT(ADCSRA,ADSC));
-	
+
 	//Step 4: Return Value
 	u16 ADC_digitalValue = ADCL + (ADCH << 8);
 	return ADC_digitalValue;
 }
+

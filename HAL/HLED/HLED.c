@@ -1,5 +1,14 @@
+/*
+ * HLED.c
+ *
+ *  Created on: ٢٩‏/٠٩‏/٢٠٢١
+ *      Author: Ahmed Gaber
+ */
+
+
 #include "LSTD_TYPES.h"
 #include "HLED.h"
+#include "MDIO.h"
 
 void HLED_Void_ledIntialize() {
 	MDIO_Void_setPinDirection(LED0_PORT, LED0_PIN, OUTPUT);

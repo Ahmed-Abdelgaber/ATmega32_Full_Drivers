@@ -1,6 +1,9 @@
-﻿
-
-
+/*
+ * LSTD_TYPES.h
+ *
+ *  Created on: ??�/??�/????
+ *      Author: Ahmed Gaber
+ */
 
 #ifndef LSTD_TYPES_H_
 #define LSTD_TYPES_H_
@@ -15,6 +18,11 @@ typedef float f32;
 typedef double f64;
 typedef long double f80;
 
+typedef enum
+{
+	FALSE = 0, TRUE = 1
+
+}bool;
 
 
 #endif /* LSTD_TYPES_H_ */

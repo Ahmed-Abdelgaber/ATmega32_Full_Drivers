@@ -1,9 +1,10 @@
 /*
  * MDIO.c
  *
- * Created: 07/09/2021 09:28:22 Õ
- *  Author: Ahmed Gaber
+ *  Created on: ??ï¿½/??ï¿½/????
+ *      Author: Ahmed Gaber
  */
+
 #include "MDIO.h"
 #include "MDIO_private.h"
 #include "LSTD_TYPES.h"
@@ -142,280 +143,281 @@ void MDIO_Void_setPortDirection(portName port, pinDirection direction) {
 			break;
 		}
 	}
-
 }
 
-void MDIO_Void_setSpecifcBitsValue(portName port,currentPort* currentPort)
+
+void MDIO_Void_setSpecifcBitsValue(portName port,currentPort* currentPortValue)
 {
 	switch (port) {
 		case PORT_A:
-		if(currentPort->Pin.Pin0==HIGH)
+		if(currentPortValue->Pin.Pin0==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN0,HIGH);
 		}
-		else if (currentPort->Pin.Pin0==LOW)
+		else if (currentPortValue->Pin.Pin0==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN0,LOW);
 		}
-		if(currentPort->Pin.Pin1==HIGH)
+		if(currentPortValue->Pin.Pin1==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN1,HIGH);
 		}
-		else if (currentPort->Pin.Pin1==LOW)
+		else if (currentPortValue->Pin.Pin1==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN1,LOW);
 		}
-		if(currentPort->Pin.Pin2==HIGH)
+		if(currentPortValue->Pin.Pin2==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN2,HIGH);
 		}
-		else if (currentPort->Pin.Pin2==LOW)
+		else if (currentPortValue->Pin.Pin2==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN2,LOW);
 		}
-		if(currentPort->Pin.Pin3==HIGH)
+		if(currentPortValue->Pin.Pin3==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN3,HIGH);
 		}
-		else if (currentPort->Pin.Pin3==LOW)
+		else if (currentPortValue->Pin.Pin3==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN3,LOW);
 		}
-		if(currentPort->Pin.Pin4==HIGH)
+		if(currentPortValue->Pin.Pin4==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN4,HIGH);
 		}
-		else if (currentPort->Pin.Pin4==LOW)
+		else if (currentPortValue->Pin.Pin4==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN4,LOW);
 		}
-		if(currentPort->Pin.Pin5==HIGH)
+		if(currentPortValue->Pin.Pin5==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN5,HIGH);
 		}
-		else if (currentPort->Pin.Pin5==LOW)
+		else if (currentPortValue->Pin.Pin5==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN5,LOW);
 		}
-		if(currentPort->Pin.Pin6==HIGH)
+		if(currentPortValue->Pin.Pin6==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN6,HIGH);
 		}
-		else if (currentPort->Pin.Pin6==LOW)
+		else if (currentPortValue->Pin.Pin6==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN6,LOW);
 		}
-		if(currentPort->Pin.Pin7==HIGH)
+		if(currentPortValue->Pin.Pin7==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN7,HIGH);
 		}
-		else if (currentPort->Pin.Pin7==LOW)
+		else if (currentPortValue->Pin.Pin7==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_A,PIN7,LOW);
 		}
 		break;
 		case PORT_B:
-		
-		if(currentPort->Pin.Pin0==HIGH)
+
+		if(currentPortValue->Pin.Pin0==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN0,HIGH);
 		}
-		else if (currentPort->Pin.Pin0==LOW)
+		else if (currentPortValue->Pin.Pin0==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN0,LOW);
 		}
-		if(currentPort->Pin.Pin1==HIGH)
+		if(currentPortValue->Pin.Pin1==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN1,HIGH);
 		}
-		else if (currentPort->Pin.Pin1==LOW)
+		else if (currentPortValue->Pin.Pin1==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN1,LOW);
 		}
-		if(currentPort->Pin.Pin2==HIGH)
+		if(currentPortValue->Pin.Pin2==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN2,HIGH);
 		}
-		else if (currentPort->Pin.Pin2==LOW)
+		else if (currentPortValue->Pin.Pin2==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN2,LOW);
 		}
-		if(currentPort->Pin.Pin3==HIGH)
+		if(currentPortValue->Pin.Pin3==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN3,HIGH);
 		}
-		else if (currentPort->Pin.Pin3==LOW)
+		else if (currentPortValue->Pin.Pin3==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN3,LOW);
 		}
-		if(currentPort->Pin.Pin4==HIGH)
+		if(currentPortValue->Pin.Pin4==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN4,HIGH);
 		}
-		else if (currentPort->Pin.Pin4==LOW)
+		else if (currentPortValue->Pin.Pin4==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN4,LOW);
 		}
-		if(currentPort->Pin.Pin5==HIGH)
+		if(currentPortValue->Pin.Pin5==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN5,HIGH);
 		}
-		else if (currentPort->Pin.Pin5==LOW)
+		else if (currentPortValue->Pin.Pin5==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN5,LOW);
 		}
-		if(currentPort->Pin.Pin6==HIGH)
+		if(currentPortValue->Pin.Pin6==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN6,HIGH);
 		}
-		else if (currentPort->Pin.Pin6==LOW)
+		else if (currentPortValue->Pin.Pin6==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN6,LOW);
 		}
-		if(currentPort->Pin.Pin7==HIGH)
+		if(currentPortValue->Pin.Pin7==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN7,HIGH);
 		}
-		else if (currentPort->Pin.Pin7==LOW)
+		else if (currentPortValue->Pin.Pin7==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_B,PIN7,LOW);
 		}
-		
+
 		break;
 		case PORT_C:
-		
-		if(currentPort->Pin.Pin0==HIGH)
+
+		if(currentPortValue->Pin.Pin0==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN0,HIGH);
 		}
-		else if (currentPort->Pin.Pin0==LOW)
+		else if (currentPortValue->Pin.Pin0==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN0,LOW);
 		}
-		if(currentPort->Pin.Pin1==HIGH)
+		if(currentPortValue->Pin.Pin1==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN1,HIGH);
 		}
-		else if (currentPort->Pin.Pin1==LOW)
+		else if (currentPortValue->Pin.Pin1==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN1,LOW);
 		}
-		if(currentPort->Pin.Pin2==HIGH)
+		if(currentPortValue->Pin.Pin2==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN2,HIGH);
 		}
-		else if (currentPort->Pin.Pin2==LOW)
+		else if (currentPortValue->Pin.Pin2==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN2,LOW);
 		}
-		if(currentPort->Pin.Pin3==HIGH)
+		if(currentPortValue->Pin.Pin3==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN3,HIGH);
 		}
-		else if (currentPort->Pin.Pin3==LOW)
+		else if (currentPortValue->Pin.Pin3==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN3,LOW);
 		}
-		if(currentPort->Pin.Pin4==HIGH)
+		if(currentPortValue->Pin.Pin4==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN4,HIGH);
 		}
-		else if (currentPort->Pin.Pin4==LOW)
+		else if (currentPortValue->Pin.Pin4==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN4,LOW);
 		}
-		if(currentPort->Pin.Pin5==HIGH)
+		if(currentPortValue->Pin.Pin5==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN5,HIGH);
 		}
-		else if (currentPort->Pin.Pin5==LOW)
+		else if (currentPortValue->Pin.Pin5==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN5,LOW);
 		}
-		if(currentPort->Pin.Pin6==HIGH)
+		if(currentPortValue->Pin.Pin6==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN6,HIGH);
 		}
-		else if (currentPort->Pin.Pin6==LOW)
+		else if (currentPortValue->Pin.Pin6==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN6,LOW);
 		}
-		if(currentPort->Pin.Pin7==HIGH)
+		if(currentPortValue->Pin.Pin7==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN7,HIGH);
 		}
-		else if (currentPort->Pin.Pin7==LOW)
+		else if (currentPortValue->Pin.Pin7==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_C,PIN7,LOW);
 		};
 		break;
 		case PORT_D:
-		
-		if(currentPort->Pin.Pin0==HIGH)
+
+		if(currentPortValue->Pin.Pin0==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN0,HIGH);
 		}
-		else if (currentPort->Pin.Pin0==LOW)
+		else if (currentPortValue->Pin.Pin0==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN0,LOW);
 		}
-		if(currentPort->Pin.Pin1==HIGH)
+		if(currentPortValue->Pin.Pin1==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN1,HIGH);
 		}
-		else if (currentPort->Pin.Pin1==LOW)
+		else if (currentPortValue->Pin.Pin1==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN1,LOW);
 		}
-		if(currentPort->Pin.Pin2==HIGH)
+		if(currentPortValue->Pin.Pin2==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN2,HIGH);
 		}
-		else if (currentPort->Pin.Pin2==LOW)
+		else if (currentPortValue->Pin.Pin2==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN2,LOW);
 		}
-		if(currentPort->Pin.Pin3==HIGH)
+		if(currentPortValue->Pin.Pin3==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN3,HIGH);
 		}
-		else if (currentPort->Pin.Pin3==LOW)
+		else if (currentPortValue->Pin.Pin3==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN3,LOW);
 		}
-		if(currentPort->Pin.Pin4==HIGH)
+		if(currentPortValue->Pin.Pin4==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN4,HIGH);
 		}
-		else if (currentPort->Pin.Pin4==LOW)
+		else if (currentPortValue->Pin.Pin4==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN4,LOW);
 		}
-		if(currentPort->Pin.Pin5==HIGH)
+		if(currentPortValue->Pin.Pin5==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN5,HIGH);
 		}
-		else if (currentPort->Pin.Pin5==LOW)
+		else if (currentPortValue->Pin.Pin5==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN5,LOW);
 		}
-		if(currentPort->Pin.Pin6==HIGH)
+		if(currentPortValue->Pin.Pin6==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN6,HIGH);
 		}
-		else if (currentPort->Pin.Pin6==LOW)
+		else if (currentPortValue->Pin.Pin6==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN6,LOW);
 		}
-		if(currentPort->Pin.Pin7==HIGH)
+		if(currentPortValue->Pin.Pin7==HIGH)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN7,HIGH);
 		}
-		else if (currentPort->Pin.Pin7==LOW)
+		else if (currentPortValue->Pin.Pin7==LOW)
 		{
 			MDIO_Void_setPinValue(PORT_D,PIN7,LOW);
 		}
 		break;
 	}
-	
+
 }
+

@@ -1,13 +1,12 @@
 /*
- * MDIO_private.h
+ * MDIO_Private.h
  *
- * Created: 07/09/2021 09:30:39 Õ
- *  Author: Ahmed Gaber
+ *  Created on: ??þ/??þ/????
+ *      Author: Ahmed Gaber
  */
 
-#ifndef MDIO_PRIVATE_H_
-#define MDIO_PRIVATE_H_
-#include "LSTD_TYPES.h"
+#ifndef MDIO_MDIO_PRIVATE_H_
+#define MDIO_MDIO_PRIVATE_H_
 
 #define  PORTA (*((volatile u8*)0x3B))
 #define  PORTB (*((volatile u8*)0x38))
@@ -24,4 +23,4 @@
 #define  PINC (*((volatile u8*)0x33))
 #define  PIND (*((volatile u8*)0x30))
 
-#endif /* MDIO_PRIVATE_H_ */
+#endif /* MDIO_MDIO_PRIVATE_H_ */

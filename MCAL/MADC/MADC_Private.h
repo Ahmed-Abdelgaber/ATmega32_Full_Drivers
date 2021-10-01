@@ -1,13 +1,12 @@
-﻿/*
+/*
  * MADC_Private.h
  *
- * Created: 19/09/2021 10:58:25 ص
- *  Author: Ahmed Gaber
- */ 
+ *  Created on: ٢٩‏/٠٩‏/٢٠٢١
+ *      Author: Ahmed Gaber
+ */
 
-
-#ifndef MADC_PRIVATE_H_
-#define MADC_PRIVATE_H_
+#ifndef MADC_MADC_PRIVATE_H_
+#define MADC_MADC_PRIVATE_H_
 
 #define ADMUX  *((volatile u8*)0x27)
 #define ADCSRA *((volatile u8*)0x26)
@@ -43,4 +42,5 @@
 //MASKSs
 #define CHANNEL_MASK 0b11100000
 
-#endif /* MADC_PRIVATE_H_ */
+
+#endif /* MADC_MADC_PRIVATE_H_ */

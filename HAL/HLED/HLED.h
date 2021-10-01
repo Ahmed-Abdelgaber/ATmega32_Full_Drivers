@@ -1,6 +1,12 @@
-#ifndef HLED_H_
-#define HLED_H_
-#include "MDIO.h"
+/*
+ * HLED.h
+ *
+ *  Created on: ٢٩‏/٠٩‏/٢٠٢١
+ *      Author: Ahmed Gaber
+ */
+
+#ifndef HLED_HLED_H_
+#define HLED_HLED_H_
 
 #define LED0 0
 #define LED0_PORT PORT_C
@@ -31,4 +37,4 @@ void HLED_Void_ledIntialize(); //Set Direction
 void HLED_Void_setON(u8 ledNumber);
 void HLED_Void_setOff(u8 ledNumber);
 
-#endif
+#endif /* HLED_HLED_H_ */
